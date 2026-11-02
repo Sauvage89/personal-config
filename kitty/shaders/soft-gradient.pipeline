@@ -1,0 +1,4 @@
+startgroup
+    animation_step 33
+    shaders soft-gradient
+endgroup

@@ -1,0 +1,6 @@
+startgroup
+    var float CAUSTIC_INTEN = 0.0015
+    var float UV_DISPLACEMENT = 0.008
+    var float3 WATER_COLOR = float3(0.5, 0.5, 0.5)
+    shaders water
+endgroup
