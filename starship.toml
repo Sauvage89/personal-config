@@ -1,0 +1,38 @@
+format = """
+[╭─](bold blue) $directory$git_branch$c$cpp$python$cmd_duration
+[╰─](bold blue) $character"""
+
+[directory]
+format = "󰉋 [$path]($style) "
+style = "bold cyan"
+truncation_length = 4
+truncate_to_repo = false
+
+[git_branch]
+symbol = "󰊢 "
+format = " [$symbol$branch]($style) "
+style = "bold purple"
+
+[c]
+symbol = "C "
+format = " [$symbol]($style)"
+style = "bold blue"
+
+[cpp]
+symbol = "C++ 󰙲 "
+format = " [$symbol]($style)"
+style = "bold blue"
+
+[python]
+symbol = "Python "
+format = " [$symbol]($style)"
+style = "bold yellow"
+
+[cmd_duration]
+min_time = 2000
+format = " took [$duration]($style)"
+style = "bold yellow"
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
