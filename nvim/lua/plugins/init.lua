@@ -8,14 +8,14 @@ vim.pack.add({
 	{ src = "https://github.com/akinsho/bufferline.nvim", version = vim.version.range("*") }, -- barre de buffers
 	{ src = "https://github.com/nvim-tree/nvim-web-devicons" }, -- icônes (utilisé par les autres plugins)
 	{ src = "https://github.com/neovim/nvim-lspconfig" }, -- configs prêtes de clangd, lua_ls...
-	{ src = "https://github.com/0ur4n05/header42.nvim" }, -- header 42
+	{ src = "https://github.com/MeanderingProgrammer/render-markdown.nvim" },
 })
 
 -- Un fichier de config par plugin.
--- nvim-web-devicons et nvim-lspconfig n'ont pas de fichier : aucun réglage nécessaire.
 require("plugins.catppuccin") -- en premier : les autres plugins reprennent ses couleurs
 require("plugins.snacks")
 require("plugins.lualine")
 require("plugins.which-key")
 require("plugins.bufferline")
 require("plugins.header42")
+require("plugins.render-markdown")

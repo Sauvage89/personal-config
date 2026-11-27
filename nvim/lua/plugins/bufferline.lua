@@ -14,15 +14,10 @@ require("bufferline").setup({
 })
 
 -- Raccourcis ------------------------------------------------------------------
--- Aller au buffer n°i de la barre (rangée de chiffres AZERTY : & é " ' ( - è _ ç)
-local keys = { "&", "é", '"', "'", "(", "-", "è", "_", "ç" }
+local keys = { "1", "2", "3", "4", "5", "6", "7", "8", "9" }
 
 for i, key in ipairs(keys) do
 	vim.keymap.set("n", "<C-" .. key .. ">", "<Cmd>BufferLineGoToBuffer " .. i .. "<CR>", { desc = "Buffer " .. i })
 end
 
--- Fermer des buffers (Snacks.bufdelete garde la disposition des fenêtres intacte)
-vim.keymap.set("n", "<leader>bd", function() Snacks.bufdelete() end, { desc = "Fermer le buffer courant" })
-vim.keymap.set("n", "<C-w>", function() Snacks.bufdelete() end, { desc = "Fermer le buffer" })
-vim.keymap.set("n", "<leader>bo", function() Snacks.bufdelete.other() end, { desc = "Fermer les autres buffers" })
-vim.keymap.set("n", "<leader>bp", "<Cmd>BufferLinePickClose<CR>", { desc = "Choisir un buffer à fermer" })
+

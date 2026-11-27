@@ -16,3 +16,6 @@ vim.o.statuscolumn = "%=%{v:relnum == 0 ? v:lnum : abs(v:relnum) + 1}%="
 -- Indentation
 vim.opt.shiftwidth = 4 -- espaces par niveau d'indentation
 vim.opt.tabstop = 4 -- largeur d'une tabulation
+
+-- Hapiness
+vim.opt.swapfile = false
